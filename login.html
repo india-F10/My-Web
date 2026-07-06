@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Registration Form</title>
+        <style>
+            body{
+                background: linear-gradient(135deg, #0a1f44, #102c5c);
+            }
+            .contain{
+                margin: 100px;
+                width: auto;
+                border-radius: 30px;
+            }
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                color:rgb(4, 0, 128);
+                font: bolder;
+                text-shadow: 0 0 15px rgba(79, 81, 211, 0.418);
+            }
+            .container{
+                display: flex;
+                height: 180vh;
+                background: #0b0a26;
+            }
+            .form-container{
+                
+                width:400px;
+                padding: 30px;
+                margin-bottom: 30px;
+                margin: 50px auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 30px;
+                background-color: 255, 255, 255, 0.08;
+                
+                border-radius: 30px;
+                
+            }
+            .image-container{
+                width: 90%;
+                height: 95%;
+                object-fit: cover;
+                background-image: url(login\ image.jpeg);
+                background-position: center;
+                border-radius: 30px;
+                filter: brightness(70%);
+
+            }
+        
+
+            
+        
+            
+            label{
+                display: block;
+                text-align: justify;
+                color: aliceblue;
+                
+            }
+            input{
+                color:rgb(112, 176, 216);
+                border-radius: 30px;
+                border-width: 10px;
+                box-sizing: 500px;
+                padding: 10px;
+                width: 350px;
+             }
+             @keyframes input{
+                0%{
+                    transform: scale(0.9);
+                }
+             }
+             button{
+                color: white;
+                border-radius: 500px;
+                border-width: 10px;
+                padding: 10px;
+                width: 100px;
+                margin-left: 250px;
+                margin-bottom: 20px;
+                background-color: #00c6ff;
+                animation: glow 2s  infinite;
+                transition: 0.3s;
+                
+               
+             }
+             @keyframes glow{
+                0%{
+                    box-shadow: 0 0 5px #00c6ff;
+                }
+                50%{
+                    box-shadow: 0 0 20px #0f29d7;
+                }
+                100%{
+                    box-shadow: 0 0 5px #00c6ff;
+                }
+             }
+             button:hover{
+                transform: translateY(-5px);
+               
+             }
+             input[type="radio"]{
+                accent-color: #3700ff;
+             }
+             .Male{
+                color: #00c6ff;
+             }
+             .Female{
+                color: #00c6ff;
+             }
+            
+               
+        </style>
+    </head>
+    <body>
+
+    <div class="contain">   
+     <div class="container">
+       
+          <div class="image-container"></div>
+         <div class="form-container">
+            
+        <h1>My Registration Form</h1>
+            <p>
+                <label for="name">First Name:</label>
+                <input id="name" placeholder="Enter your first name" required>
+            </p>
+            <p>
+                <label for="name">Surname:</label>
+                <input id="name" placeholder="Enter your Surname" >
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter your email"> 
+            </p>
+
+            <p>
+            <label for="name">Gender:</label>
+            <label class="Male">
+               <input type="radio" name="Gender">M
+            </label>
+            <label class="Female">  
+                <input type="radio" name="Gender">F
+            </label>
+            </p>
+            <p>
+                <label for="name">Address:</label>
+                <input id="name" placeholder="Enter your Address">
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" placeholder="Enter your password" >
+            </p>
+            <p>
+                <label for="password"> Confirm Your Password:</label>
+                <input type="password" placeholder="Confirm Your password">
+            </p>< 
+             
+             <button type="submit">submit</button>
+
+               
+            </a></p>
+           <div class="image-container"></div>
+        
+            </a></p>
+            
+        </div>
+
+       
+      </div>
+    </div>    
+    </body>
+</html>
