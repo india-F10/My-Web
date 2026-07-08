@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#87CEFA,#4FA3F7);
+}
+
+.container{
+    width:900px;
+    background:#dff3ff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.container h1{
+    text-align:center;
+    margin-bottom:15px;
+    color:#111;
+}
+
+hr{
+    border:1px solid #4fa3f7;
+    margin-bottom:30px;
+}
+
+.form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+input{
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+}
+
+.gender{
+    margin-top:25px;
+}
+
+.gender label{
+    margin-right:20px;
+}
+
+.btn{
+    display:flex;
+    justify-content:center;
+    margin-top:35px;
+}
+
+button{
+    width:250px;
+    padding:15px;
+    font-size:22px;
+    border:none;
+    border-radius:8px;
+    color:#fff;
+    background:linear-gradient(to right,#63b8ff,#007bff);
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+@media(max-width:768px){
+    .container{
+        width:95%;
+    }
+
+    .form{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Registration</h1>
+<hr>
+
+<form>
+
+<div class="form">
+
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name">
+</div>
+
+<div class="form-group">
+<label>Username</label>
+<input type="text" placeholder="Enter your username">
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" placeholder="Enter your email">
+</div>
+
+<div class="form-group">
+<label>Phone Number</label>
+<input type="tel" placeholder="Phone Number">
+</div>
+
+<div class="form-group">
+<label>Password</label>
+<input type="password" placeholder="Enter your password">
+</div>
+
+<div class="form-group">
+<label>Confirm Password</label>
+<input type="password" placeholder="Confirm Password">
+</div>
+
+</div>
+
+<div class="gender">
+<h3>Gender</h3><br>
+
+<label><input type="radio" name="gender"> Male</label>
+<label><input type="radio" name="gender"> Female</label>
+<label><input type="radio" name="gender"> Other</label>
+
+</div>
+
+<div class="btn">
+<button type="submit">Register</button>
+</div>
+<a href="log.html" style="text-decoration:none; color:blue; display:block; text-align:center; margin-top:15px;">Already have an account? Log in</a>
+<div class="button">
+<button><a href="startup.html">Home</a></button>
+</div>
+</form>
+
+</div>
+
+</body>
+</html>

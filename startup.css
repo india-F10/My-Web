@@ -201,7 +201,7 @@ body{
     position: absolute;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
+    border-radius: 50% ;
     background: white;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -359,3 +359,14 @@ body{
         transform: translateY(0);
     }
 }
+.button{
+    margin: 20px;
+    margin-left: 85%;
+    color: #148ab1;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: button;
+    transition:0.3s
+}
+ 
